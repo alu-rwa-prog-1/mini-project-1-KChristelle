@@ -12,7 +12,17 @@ class PopularItems extends StatelessWidget {
             ListTile(
               title: Text(title),
               subtitle: Text(subtitle),
-            )
+            ),
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Icon(
+                  FontAwesomeIcons.heart,
+                  size: 20,
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -70,13 +80,13 @@ class PopularItems extends StatelessWidget {
                   'KidiZoom Camera',
                   'From Baby Haven'),
               Items(
-                  'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+                  'https://images.unsplash.com/photo-1508899203029-1c9eb493c9bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
                   'Care Package',
                   'From Gift Master'),
               Items(
-                  'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1054&q=80',
-                  'Baby Haven',
-                  'Best baby toys in Kigali.'),
+                  'https://images.unsplash.com/photo-1578203657036-746e6c4eb3b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=972&q=80',
+                  'charcuterie board',
+                  'From Taste Green'),
             ],
           ),
         ),

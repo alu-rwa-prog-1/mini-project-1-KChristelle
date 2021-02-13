@@ -125,6 +125,27 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        backgroundColor: Colors.red[900],
+        iconSize: 20,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.home),
+              label: 'Home',
+              backgroundColor: Colors.red[800]),
+          BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.shoppingBag), label: 'My Cart'),
+          BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.user),
+              label: 'Profile',
+              backgroundColor: Colors.red),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add),
+              label: 'Profile',
+              backgroundColor: Colors.red),
+        ],
+      ),
     );
   }
 }

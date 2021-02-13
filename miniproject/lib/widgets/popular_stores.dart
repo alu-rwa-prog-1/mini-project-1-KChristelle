@@ -12,7 +12,17 @@ class PopularStores extends StatelessWidget {
             ListTile(
               title: Text(title),
               subtitle: Text(subtitle),
-            )
+            ),
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Icon(
+                  FontAwesomeIcons.heart,
+                  size: 20,
+                ),
+              ),
+            ),
           ],
         ),
       ),
