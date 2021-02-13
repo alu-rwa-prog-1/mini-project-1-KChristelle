@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+// Create class for all cards
 class PopularStores extends StatelessWidget {
   Container Stores(String image, String title, String subtitle) {
     return Container(
@@ -70,6 +71,7 @@ class PopularStores extends StatelessWidget {
           // color: Colors.blue,
           child: ListView(
             scrollDirection: Axis.horizontal,
+            // create and print cards
             children: <Widget>[
               Stores(
                   'https://images.unsplash.com/photo-1611293388250-580b08c4a145?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1022&q=80',

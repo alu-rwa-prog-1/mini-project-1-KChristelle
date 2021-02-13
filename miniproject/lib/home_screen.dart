@@ -9,6 +9,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  // Icon lists to access icons
   List<IconData> _icons = [
     FontAwesomeIcons.gift,
     FontAwesomeIcons.birthdayCake,
@@ -41,13 +42,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // leading: IconButton(
-        //   icon: Icon(Icons.menu),
-        //   onPressed: () {},
-        // ),
         title: Text('Kigali Shops'),
         titleSpacing: 01.0,
         centerTitle: true,
+        // Add icons to app bar
         actions: <Widget>[
           IconButton(
             icon: Icon(FontAwesomeIcons.search),
@@ -63,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.red[900],
       ),
       body: SafeArea(
+        // Listview that will hold all widgets
         child: ListView(
           padding: EdgeInsets.symmetric(vertical: 30.0),
           children: <Widget>[
@@ -81,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
+              // build and print out icons
               children: <Widget>[
                 _buildIcon(0),
                 _buildIcon(1),
@@ -96,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+      // Create Drawer
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -125,6 +126,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+
+      // Create navigation bar
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         backgroundColor: Colors.red[900],
